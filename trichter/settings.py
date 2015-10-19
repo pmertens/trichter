@@ -20,8 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'et$t7xv=l-^jd+-a6762hk0jnv8%@jz_4=ycp3&n23kdi_h@4-'
-
+SECRET_KEY = os.environ.get('TRICHTER_SECRET_KEY')
+import ipdb; ipdb.set_trace()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
